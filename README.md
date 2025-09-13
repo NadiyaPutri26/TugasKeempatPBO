@@ -4,12 +4,12 @@ Dalam praktikum ini, akan dipelajari cara _connect_ Netbeans dengan postgreeSQL 
 # _Connect_ PostgreeSQL
 Untuk melakukan _connect_ antara Netbeans dan postgreeSQL, yang perlu dilakukan adalah membuat _database_ nya dulu di pgAdmin. Dalam praktikum ini nama _database_ nya adalah "DB_PBO_P4". Kemudian dalam aplikasi Netbeans, klik "Ctrl+5" untuk membuka menu "Services", setelah itu lakukan _connect database_ dengan masuk di menu "Drivers" dan pilih "PostgreeSQL". Isi nama _database_ sesuai yang ada di pgAdmin, isi _password_ usernya untuk _connect_ ke _server database_. Setelah klik "Next", pada bagian "Choose Database Schema" pilih "public", kemudian setelah klik "Next" masukkan nama _database_ sesuai dengan nama _database_ di pgAdmin dan _finish_. Maka Netbeans sudah terhubung dengan pgAdmin.
 
-# Class Koneksi (Superclass)
+# Class Koneksi (_Superclass_)
 Dalam praktikum ini, dilakukan penerapan _Inheritance_ seperti praktikum sebelumnya, dimana **Class Koneksi** adalah _superclass_ sedangkan **Class Create, Class Insert, Class Read/ Select, Class Update,** dan **Class Delete** akan menjadi _subclassnya_.
 
-# Konsep CRUD (Create, Read/ Select, Update, dan Delete) dan Insert 
+# Konsep CRUD (_Create, Read/ Select, Update,_ dan _Delete_) dan _Insert_ 
 
-## **CREATE**
+## **_CREATE_**
 
   
 Dalam praktikum ini untuk **Class Create** (subclass) berisi code untuk membuat tabel _database_ "tokobunga", dimana setiap kolom dalan tabelnya adalah:
@@ -34,7 +34,7 @@ Berikut Query Create:
             + "ukuran VARCHAR (10)"
             + ");";**
 
-## **INSERT**
+## **_INSERT_**
 
   
 Dalam **Class Insert** (subclass) akan dibuat _code_ untuk menjalankan _query_ untuk menambahkan data ke dalam tabel yang sudah dibuat yakni tabel "tokobunga" dalam _class_ ini menggunakan **Class Scanner** agar _user_ dapat mengisi data ketika program _running_. 
@@ -47,7 +47,7 @@ Berikut _query_ untuk Insert:
                     + bunga1 + "','" + bunga2 + "','" + bunga3 + "','" + bunga4 + "','"
                     + bunga5 + "','" + bunga6 + "')";**
 
-## **READ/ SELECT**
+## **_READ/ SELECT_**
 
   
 Kemudian dalam **Class Read/ Select** (subclass), akan menampilkan data yang sudah dimasukkan ke dalam tabel "tokobunga" melalui Class Insert. Selain itu, dalam class ini menggunakan Class Scanner agar user dapat mengisi data ketika program running. 
@@ -58,7 +58,7 @@ Berikut Query untuk Select:
 
 **String QUERY = "SELECT * FROM tokobunga";**
 
-## **UPDATE**
+## **_UPDATE_**
 
   
 Dalam **Class Update** (subclass) akan dilakukan perbaruan data. Dalam praktikum ini perbaruan data yang dilakukan adalah memperbaiki typo (salah kata) ketika menginsert data di kolom "deskripsiproduk" pada idbunga= T01. Class ini juga menggunakan Class Scanner agar user dapat mengisi data ketika program running.
@@ -68,7 +68,7 @@ Berikut query untuk Update:
 
 **String QUERY = "UPDATE tokobunga SET " + bunga + "='" + bunga1 + "' WHERE " + bunga2 + "='" + bunga3 + "';";**
 
-## **DELETE**
+## **_DELETE_**
 
   
 Dalam **Class Delete** (subclass) akan dilakukan penghapusan data. Selain itu, class ini menggunakan Class Scanner agar user dapat mengisi data ketika program running. 
@@ -76,7 +76,7 @@ Dalam **Class Delete** (subclass) akan dilakukan penghapusan data. Selain itu, c
 
 Dalam praktikum ini query untuk Delete adalah **String QUERY = "DELETE FROM tokobunga WHERE " + bunga + "='" + bunga1 + "';";**.
 
-# Menu Utama (Main Class)
+# Menu Utama (_Main Class_)
 Dalam praktikum ini terdapat Class Menu untuk memanggil semua Class yang ada dalam Package "TokoBunga". Dimana dalam praktikum ini menggunakan Class Scanner dalam _library_ milik Java agar user dapat mengisi data ketika program running. 
 
 
