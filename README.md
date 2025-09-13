@@ -12,7 +12,7 @@ Dalam praktikum ini, dilakukan penerapan _Inheritance_ seperti praktikum sebelum
 ## **_CREATE_**
 
   
-Dalam praktikum ini untuk **Class Create** (subclass) berisi code untuk membuat tabel _database_ "tokobunga", dimana setiap kolom dalan tabelnya adalah:
+Dalam praktikum ini untuk **Class Create** (_subclass_) berisi code untuk membuat tabel _database_ "tokobunga", dimana setiap kolom dalan tabelnya adalah:
 - **idbunga CHAR (3)** --> _Primary key_, dengan format (huruf pertama nama bunga - urutan), contoh: Mawar Merah (M01)
 - **namabunga VARCHAR (20)** --> nama bunga
 - **kategoribunga VARCHAR (20)** --> produk bunga dalam praktikum ini berbentuk buket dalam berbagai jenis (contoh: buket Wedding, buket Friends, buket Special, buket Valentine)
@@ -21,7 +21,7 @@ Dalam praktikum ini untuk **Class Create** (subclass) berisi code untuk membuat 
 - **stok INT** --> stok bunga yang ada di toko
 - **ukuran VARCHAR (10)** --> dalam praktikum ini ada 3 macam ukuran, yakni K (kecil), M (Medium), B (besar) dan masing-masing ukuran memiliki jumlah tangkai yang sudah di tentukan yakni K (11-20), M (21-30), B (31-40).
 
-Berikut Query Create:
+Berikut _Query_ _Create_:
 
 
 **String QUERY = "CREATE TABLE tokobunga ("
@@ -37,9 +37,9 @@ Berikut Query Create:
 ## **_INSERT_**
 
   
-Dalam **Class Insert** (subclass) akan dibuat _code_ untuk menjalankan _query_ untuk menambahkan data ke dalam tabel yang sudah dibuat yakni tabel "tokobunga" dalam _class_ ini menggunakan **Class Scanner** agar _user_ dapat mengisi data ketika program _running_. 
+Dalam **Class Insert** (_subclass_) akan dibuat _code_ untuk menjalankan _query_ untuk menambahkan data ke dalam tabel yang sudah dibuat yakni tabel "tokobunga" dalam _class_ ini menggunakan **Class Scanner** agar _user_ dapat mengisi data ketika program _running_. 
 
-Berikut _query_ untuk Insert: 
+Berikut _Query_ untuk _Insert_: 
 
 
 **String QUERY = "INSERT INTO tokobunga (idbunga, namabunga, kategoribunga"
@@ -50,9 +50,9 @@ Berikut _query_ untuk Insert:
 ## **_READ/ SELECT_**
 
   
-Kemudian dalam **Class Read/ Select** (subclass), akan menampilkan data yang sudah dimasukkan ke dalam tabel "tokobunga" melalui Class Insert. Selain itu, dalam class ini menggunakan Class Scanner agar user dapat mengisi data ketika program running. 
+Kemudian dalam **Class Read/ Select** (_subclass_), akan menampilkan data yang sudah dimasukkan ke dalam tabel "tokobunga" melalui **Class Insert**. Selain itu, dalam _class_ ini menggunakan **Class Scanner** agar _user_ dapat mengisi data ketika program _running_. 
 
-Berikut Query untuk Select: 
+Berikut _Query_ untuk _Select_: 
 
 
 
@@ -61,9 +61,9 @@ Berikut Query untuk Select:
 ## **_UPDATE_**
 
   
-Dalam **Class Update** (subclass) akan dilakukan perbaruan data. Dalam praktikum ini perbaruan data yang dilakukan adalah memperbaiki typo (salah kata) ketika menginsert data di kolom "deskripsiproduk" pada idbunga= T01. Class ini juga menggunakan Class Scanner agar user dapat mengisi data ketika program running.
+Dalam **Class Update** (subclass) akan dilakukan perbaruan data. Dalam praktikum ini perbaruan data yang dilakukan adalah memperbaiki typo (salah kata) ketika menginsert data di kolom "deskripsiproduk" pada idbunga= T01. _Class_ ini juga menggunakan **Class Scanner** agar _user_ dapat mengisi data ketika program _running_.
 
-Berikut query untuk Update:  
+Berikut _Query_ untuk _Update_:  
 
 
 **String QUERY = "UPDATE tokobunga SET " + bunga + "='" + bunga1 + "' WHERE " + bunga2 + "='" + bunga3 + "';";**
@@ -74,9 +74,9 @@ Berikut query untuk Update:
 Dalam **Class Delete** (subclass) akan dilakukan penghapusan data. Selain itu, class ini menggunakan Class Scanner agar user dapat mengisi data ketika program running. 
 
 
-Dalam praktikum ini query untuk Delete adalah **String QUERY = "DELETE FROM tokobunga WHERE " + bunga + "='" + bunga1 + "';";**.
+Dalam praktikum ini _Query_ untuk _Delete_ adalah **String QUERY = "DELETE FROM tokobunga WHERE " + bunga + "='" + bunga1 + "';";**.
 
 # Menu Utama (_Main Class_)
-Dalam praktikum ini terdapat Class Menu untuk memanggil semua Class yang ada dalam Package "TokoBunga". Dimana dalam praktikum ini menggunakan Class Scanner dalam _library_ milik Java agar user dapat mengisi data ketika program running. 
+Dalam praktikum ini terdapat **Class Menu** untuk memanggil semua _Class_ yang ada dalam _Package_ "TokoBunga". Dimana dalam praktikum ini menggunakan **Class Scanne**r dalam _library_ milik Java agar _user_ dapat mengisi data ketika program _running_. 
 
 
